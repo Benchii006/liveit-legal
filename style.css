@@ -33,3 +33,21 @@ p.muted { color: var(--muted); }
 }
 a { color: var(--accent); }
 footer { margin-top: 48px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); padding-top: 20px; }
+
+/* 2026-11-05: language switch, lists, sub-headings, contents, owner placeholders. Same look. */
+nav.lang { margin-top: 6px; }
+nav.lang a { font-size: 13px; margin-right: 14px; }
+nav.lang a[aria-current="true"] { color: var(--text); }
+h3 { font-size: 15px; margin: 20px 0 6px; color: var(--text); }
+ul, ol { margin: 0 0 12px 20px; }
+li { color: var(--text); font-size: 15px; margin-bottom: 6px; }
+.card ul { margin-bottom: 4px; }
+.toc ol { margin-left: 22px; columns: 2; column-gap: 28px; }
+.toc li { font-size: 14px; margin-bottom: 4px; break-inside: avoid; }
+.toc a { text-decoration: none; }
+section { scroll-margin-top: 16px; }
+.note { color: var(--muted); font-size: 13px; }
+mark.owner { background: #ffd54a; color: #1b1814; font-weight: 700; padding: 1px 5px; border-radius: 4px; }
+@media (max-width: 520px) { .toc ol { columns: 1; } }
+h1 { line-height: 1.2; }
+.card > h2:first-child { margin-top: 2px; }
